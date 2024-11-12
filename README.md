@@ -1,5 +1,5 @@
 # HEDC_Opiod_Project
-File "dstewart_hedc_work.ipynb" details how to calculate the MME per population and plot the MME/pop per county trend across the years. It also shows how to calculate the descriptive summaries of the drugs of interests before and after I-STOP law goes into effect.
+File "dstewart_hedc_work.ipynb" details how to calculate the MME per population and plot the MME/pop per county trend across the years after merging ARCOS data with pop estimates data for NY State and Ind State. It also shows how to calculate the descriptive summaries of the drugs of interests before and after I-STOP law goes into effect.
 
 In file "Getting directionality of change in mme/pop of counties.ipynb", we are processing the ARCOS data to get total mme per each transaction. We then add up total mme per month for each county. We merge the ARCOS data with census data to help account for population changes within each county over time. We then test each county via Chow test and adjust p-values to account for multiple tests. This script then outputs a csv file with county names and associated outcome variables, including direction of change, mean mme before and after, and percentage of change in mme.
 
