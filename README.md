@@ -7,6 +7,10 @@ In file "creating county map.ipynb", we generate a map of New York Counties, col
 
 In file "Fitting logit w/ SMOTE.ipynb", we merge our dataframe with outcome variables (change in mme before and after August 2013) with the County Health Rankings database from University of Wisconsin Population Health Institute (linked here: https://www.countyhealthrankings.org/health-data/new-york/data-and-resources). As the number of features in comparison to observations is large, we apply recursive feature elimination to select for the most predictive variables and avoid overfitting our model. As there is an imbalance in outcomes within our dataset (41 counties decreased vs 9 increased), we also have applied synthetic minority oversampling technique when training the model. We have also generated an ROC and classification matrix to help evaluate performance of the model in this script.
 
+In file "Arima_model (9).ipynb", we create a SARIMA model testing against the null hypothesis that there is no change in opioid transactions before and after August 2013. We compare forecasted seasonal arima values to actual values shows that there is a significant difference in these drugs due to the implementation of the law, especially oxycodone. The data was differenced once to account for stationarity. P values, T values, and RMSE values were also calculated.
+
 Data "indiana_pop_estimates.csv" and "ny county pop estimates + fips.csv" have been uploaded for convenience as we manipulated these files to contain only the county names and pop estimates.
 Data 'county health data 2013.csv' has also been uploaded for convience as we manipulated these files to assemble many separate csv files in one spreadsheet.
 Data 'county_directions_percentagechanges.csv' has been used as a starting point for the 'fitting multiple logistic regression' script so we have uploaded it for convenience as well.
+
+
